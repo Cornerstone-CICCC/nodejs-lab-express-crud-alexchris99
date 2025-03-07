@@ -1,0 +1,17 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.view-info > div{
+    background-color: rgb(164, 164, 164);
+}
+
+#edit-form, #add-employee{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}

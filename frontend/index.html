@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Bread</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div>
+            <h1>Employees</h1>
+            <div>
+                <h2>List of Employees</h2>
+                <ul class="list"></ul>
+            </div>
+            <form id="search-fname">
+                <input type="text" id="query" placeholder="Enter first name">
+                <button type="submit" >Search and View Employees</button>
+            </form>
+            <div>
+                <h2>Add Employee</h2>
+                <form id="add-employee">
+                    <input type="text" name="fname" id="fname" placeholder="First name" required>
+                    <input type="text" name="lname" id="lname" placeholder="Last name" required>
+                    <input type="number" name="age" id="age" placeholder="Age" required>
+                    <div>
+                        <label for="isMarried">Married?</label>
+                        <input type="checkbox" name="isMarried" id="isMarried">
+                    </div>
+                    <button type="submit">Add Employee</button>
+                </form>
+            </div>
+            <div>
+                <h2>Edit Employee</h2>
+                <form id="edit-form">
+                    <input id="id" hidden>
+                    <input id="edit-fname" name="edit-fname" type="text"  required>
+                    <input id="edit-lname" name="edit-lanme" type="text" required>
+                    <input id="edit-age" name="edit-age" type="number"  required>
+                    <div>
+                        <label for="edit-isMarried">Married?</label>
+                        <input type="checkbox" id="edit-isMarried" name="edit-isMarried">
+                    </div>
+                    <button type="submit">Edit Employee</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h2>View Employee/s Info</h2>
+            <div class="view-info">
+
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </div>
+</body>
+</html>
